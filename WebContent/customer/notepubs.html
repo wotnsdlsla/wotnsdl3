@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>공지사항 목록</title>
+</head>
+<style>
+   input[type~="ko"]{
+      border:10px pink solid;
+   }
+   
+   h1{
+      font-weight: bold;
+      color:pink;
+      text-decoration: underline;
+   }
+</style>
+<body>
+   <!-- ------------------------------------------------------헤더----------------------------------------------------------------------- -->
+   <h1>뉴렉처 온라인</h1>
+
+   <header>
+      <section>
+         <h1>헤더</h1>
+         <!-- 중간제목(머리말) 이 단위들을 묶을만한제목이없어서 헤더라구함 -->
+         <nav>
+            <h1>메인 메뉴</h1>
+            <!-- 단위제목 -->
+            <ul>
+               <a href=""><li>학습가이드</li></a>
+               <a href=""><li>뉴렉과정</li></a>
+               <a href=""><li>강좌선택</li></a>
+            </ul>
+         </nav>
+         <section>
+            <h1>강좌검색 폼</h1>
+            <form>
+               <fieldset>
+                  <legend>과정검색필드</legend>
+                  <!--필드에 대한 라벨-->
+                  <label>과정검색</label>
+                  <!--인풋에 대한 라벨-->
+                  <input /> <input type="submit" value="검색" />
+               </fieldset>
+            </form>
+         </section>
+
+         <nav>
+            <h1>회원 메뉴</h1>
+            <ul>
+               <a href=""><li>HOME</li></a>
+               <a href=""><li>로그인</li></a>
+               <a href=""><li>회원가입</li></a>
+            </ul>
+         </nav>
+
+         <nav>
+            <h3>고객 메뉴</h3>
+            <ul>
+               <a href=""><li>마이페이지</li></a>
+               <a href=""><li>고객센터</li></a>
+            </ul>
+         </nav>
+      </section>
+   </header>
+
+   <!-- -------------------------------------------------------aside------------------------------------------------------------------- -->
+   <aside>
+      <section>
+         <h1>고객센터</h1>
+         <nav>
+            <h3>고객센터 메뉴</h3>
+            <ul>
+               <li>공지사항</li>
+               <li>1:1고객문의</li>
+               <li>학습안내</li>
+            </ul>
+         </nav>
+         <nav>
+            <h3>추천사이트</h3>
+            <ul>
+               <li>앤서이즈</li>
+               <li>W3C</li>
+               <li>마이크로소프트</li>
+            </ul>
+         </nav>
+         <nav>
+            <h3>구글광고</h3>
+         </nav>
+      </section>
+   </aside>
+   <!-- -----------------------------------------------------------메인--------------------------------------------- -->
+   <main>
+   <h1>공지사항</h1>
+   <div>
+      <h3>breadlet</h3>
+
+      <ul>
+         <li>home</li>
+         <li>고객센터</li>
+         <li>공지사항</li>
+      </ul>
+   </div>
+
+   <article>
+      <h1>공지사항</h1>
+      <table border="1">
+         <tbody>
+            <tr>
+               <th>제목</th>
+               <td colspan="3">리눅스 강의 7월 1일부터 업로드 할 예정입니다.</td>
+            </tr>
+            <tr>
+               <th>작성일</th>
+               <td colspan="3">2016-06-30 오후 17:41</td>
+            </tr>
+            <tr>
+               <th>작성자</th>
+               <td>admin</td>
+               <th>조회수</th>
+               <td>499</td>
+            <tr>
+               <th>첨부파일</th>
+               <td colspan="3"></td>
+            </tr>
+            <tr>
+               <td colspan="4">안녕하세요. 뉴렉처입니다. 생각보다 새로운 강의를 묻는 분들이 많으시네요.
+                  기다리시는 분들이 계시다는 점에서 감사하다는 말과 죄송하다는 말을 동시에 말씀드려야 겠습니다. 현재 내부 업무 시스템을
+                  대거 변경하는 과정에서 정작 중요한 강의 오픈을 위한 시간을 할애하지 못하고 있었습니다. 하지만 계속 미룰 수도 없는
+                  일이라서 일단 가능한 선에서 내일부터 리눅스라도 편집해서 조금씩 올리도록 하겠습니다. 그 뒤에 바로 이어서
+                  jQuery와 angularJS를 CSS3 레이아웃 모듈 등을 올리도록 하겠습니다. 기대하시는 시기에 적절하게 강의를
+                  올려드리지 못해서 다시한번 죄송하게 생각합니다. 감사합니다.</td>
+            </tr>
+         </tbody>
+      </table>
+   </article>
+
+   </main>
+
+   <section></section>
+   <header></header>
+   <footer></footer>
+   <aside></aside>
+   <main></main>
+   <nav></nav>
+
+</body>
+</html>

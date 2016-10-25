@@ -1,0 +1,134 @@
+@CHARSET "UTF-8";
+
+/* .hidden{
+   display:none;
+}
+
+body .h-menu > ul > li{
+   float : left;
+} */
+/* ----------------<level1>-------------------------------------------------*/
+#header{
+   height: 70px;
+   
+}
+#main-menu {
+	display: inline-block;
+	font-family: "맑은고딕";
+	font-size: 15px;
+	font-weight: bold;
+	color: #000;
+ 	
+}
+
+#main-menu >h1 {
+	display: none;
+}
+#main-menu > ul  {
+   border: 1px solid red;
+   overflow: auto;
+}
+
+#main-menu > ul > li {
+   
+   float: left;
+   padding-left: 24px;
+   background: url("../images/bg-main-menu-vsp.png") no-repeat 13px center;
+}
+
+
+#main-menu > h1{ /*존재는 하지만 보이지 않게 / 존재자체가 사라지게  */
+   /* visibility: hidden; */
+   /* display: none; */
+}
+
+#visual{
+   background: #313131 url("../images/bg-visual.png") no-repeat center;
+   background-size:3000px 171px;
+   height: 171px;
+   border-top:3px solid #9CBA34;
+}
+
+#body{
+   
+   min-height: 300px;
+   bordr-top:5px solid #8CBA34;
+   margin-top:1px;
+}
+
+#footer{
+   background: #313131;
+   height: 100px;
+}
+
+
+/* ----------------<level2>-------------------------------------------------*/
+
+
+/* 구조 변경시 망가질 수 있음 */
+#header > div,
+#visual > div,
+#body > div,
+#footer > div{
+   
+}
+
+/* 구조변경에 용이한 선택자 */
+.content-container{
+   
+   height: inherit; /* 10px; */
+   width: 960px;
+   margin: auto;
+   /* margin-left: auto;
+   margin-right: auto; */
+}
+
+
+/* ----------------<level3>-------------------------------------------------*/
+/* #aside id로 해야 */
+#aside {
+   
+   min-height: inherit;
+   width: 205px;
+   float: left;
+}
+
+main{
+   min-height: inherit;
+   width: calc(100% - 205px); /* 755px; */
+   
+   float: left;
+}
+
+/*  .clearfix:after{
+   content: "오마이갓 나야 막내 유령인가요";
+   display:block;
+   clear:left;
+   
+}  */
+
+#body > .content-container{
+   
+   background: url("../images/bg-body.png") repeat-y;
+   background: url("../images/bg-aside-title.png") no-repeat;
+   position : relative;
+}
+
+.clearfix {
+  overflow: auto;
+  zoom:1;
+}
+
+
+/* 
+#breadlet
+{
+   position:relative;
+   left:0px;
+   top:0px;
+
+   width:150px;
+   
+}
+ */
+ 
